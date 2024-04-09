@@ -1,0 +1,31 @@
+.TodoCounter {
+  position: relative;
+  padding: 16px 60px 16px 24px;
+  background-color: #4587ca;
+  color: white;
+  width: fit-content;
+}
+
+.TodoCounter span {
+  font-weight: bold;
+}
+.TodoCounter::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -10px;
+  width: 6px;
+  height: 130%;
+  background: brown;
+  border-radius: 100vh;
+}
+
+.TodoCounter::before {
+  position: absolute;
+  content: "＜";
+  font-size: 20px;
+  color: lightgray;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+}
